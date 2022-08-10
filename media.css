@@ -19,3 +19,12 @@ body {
         content: 'Lets go';
     }
 }
+
+h1:hover {
+    color: white;
+    transition: 1.7ms;
+}
+
+h1:active {
+    color: purple;
+}
