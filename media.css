@@ -12,4 +12,10 @@ body {
     body {
         background-color: magenta;
     }
+    h1::before {
+        content: 'Nice';
+    }
+    h1::after {
+        content: 'Lets go';
+    }
 }
