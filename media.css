@@ -1,0 +1,15 @@
+body {
+    background-color: cyan;
+}
+
+@media screen and (min-width:500px){
+    body {
+        background-color: red;
+    }
+}
+
+@media screen and (min-width:700px){
+    body {
+        background-color: magenta;
+    }
+}
