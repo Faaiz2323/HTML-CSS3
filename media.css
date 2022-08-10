@@ -20,16 +20,42 @@ body {
     }
 }
 
+
 h1:hover {
-    color: white;
-    transition: 1.7ms;
+    color: white;;
 }
 
 h1:active {
     color: purple;
 }
 
+div {
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+    border-radius: 15px;
+}
+
+div:hover {
+    background: cyan;
+}
+
 .one {
-    background-color: white;
-    
+    background: blue;
+    transition-property: background, border-radius;
+    transition-duration: 4s, 2s;
+}
+
+.one:hover {
+    border-radius: 50%;
+}
+
+.two {
+    background: black;
+    transition-property: background, border-radius, border-top;
+    transition-duration: 5s, 3s, 4s;
+}
+
+.two:hover {
+    border-radius: 50%;   
 }
