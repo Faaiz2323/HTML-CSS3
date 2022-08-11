@@ -1,3 +1,7 @@
+:root {
+    --primary: #132323;
+}
+
 div {
     width: 200px;
     height: 100px;
@@ -6,25 +10,23 @@ div {
 }
 
 .animation {
-    background: blue;
+    background:var(--primary);
     animation-name: move;
     animation-duration: 5s;
     animation-iteration-count: infinite;
 }
 
 .transition {
-    background: blue;
+    background: var(--primary);
     animation: fill 5s 2;
     animation-fill-mode: forwards;
 }
 
-.name {
-    background: cyan;
-    opacity: 0;
-    animation: for 3s forwards;
-    position: absolute;
-    margin: 0 55px 0 0;
-    padding-left: 55px;
+.box {
+    background: black;
+    box-shadow: 77px 43px 31px -2px rgba(194,194,194,0.75);
+-webkit-box-shadow: 77px 43px 31px -2px rgba(194,194,194,0.75);
+-moz-box-shadow: 77px 43px 31px -2px rgba(194,194,194,0.75);
 }
 
 @keyframes move {
@@ -64,22 +66,3 @@ div {
     }
 }
 
-@keyframes for {
-    0%{
-        transform: translateX(0);
-        opacity: 0;
-    }
-    25%{
-        transform: translateX(-200);
-        opacity: 1;
-    }
-    50%{
-        transform: translateX(-100);
-        opacity: 1;
-    }
-    100%{
-        transform: translateX(-50);
-        opacity: 1;
-        width: 15pc;
-    }
-}
