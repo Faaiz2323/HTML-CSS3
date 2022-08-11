@@ -43,7 +43,7 @@ div:hover {
 .one {
     background: blue;
     transition-property: background, border-radius;
-    transition-duration: 4s, 2s;
+    transition-duration: 2s, 1.5s;
 }
 
 .one:hover {
@@ -52,10 +52,36 @@ div:hover {
 
 .two {
     background: black;
-    transition-property: background, border-radius, border-top;
-    transition-duration: 5s, 3s, 4s;
+    transition-property: background, border-radius;
+    transition-duration: 2s, 1.5s;
 }
 
 .two:hover {
     border-radius: 50%;   
+}
+
+button{
+    margin-top: 55px;
+    width: 155px;
+    height: 55px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: black;
+    border-radius: 15px;
+}
+
+button p:hover{
+    color: white;
+}
+
+.Classic-button {
+    transition-property: background, border-radius, color;
+    transition-duration: 0.5s, 0.5s, 1s;
+}
+p {
+    font-size: 1rem;
+    font-weight: 700;
+    color: black;
 }
